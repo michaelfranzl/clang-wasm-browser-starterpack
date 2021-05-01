@@ -41,7 +41,7 @@ believe that working code is king. :)
 
 ## Examples
 
-You only need a modern browser to run the [examples](examples), which already contain pre-built
+You only need a modern browser to run the examples, which already contain pre-built
 WebAssembly code.
 
 The examples start as simple as possible, and then add more and more complexity:
