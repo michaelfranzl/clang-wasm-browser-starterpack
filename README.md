@@ -46,9 +46,18 @@ WebAssembly code.
 
 The examples start as simple as possible, and then add more and more complexity:
 
-* [Example 1: Plain C, only exports, two C files into one WASM binary](./examples/01).
-* [Example 2: Plain C with imports](./examples/02).
-* [Example 3: Plain C with renamed imports](./examples/03).
+### Plain C
+
+* [Example 1: Exports](examples/01) (compiles two C files into one WASM binary)
+* [Example 2: Default imports](examples/02)
+* [Example 3: Renamed imports](examples/03)
+
+### C with Standard Library
+
+* [Example 4: printf("Hello World!\n")](examples/04)
+
+
+## Live examples
 
 A copy of this repository is hosted on my [GitHub Page](https://michaelfranzl.github.io/clang-wasm-browser-starterpack) where these exmples are live.
 
