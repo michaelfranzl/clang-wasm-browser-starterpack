@@ -57,6 +57,11 @@ The examples start as simple as possible, and then add more and more complexity:
 * [Example 4: printf("Hello World!\n")](examples/04)
 
 
+### Plain C++
+
+* [Example 10: Adding two numbers](examples/10)
+
+
 ## Live examples
 
 A copy of this repository is hosted on my [GitHub Page](https://michaelfranzl.github.io/clang-wasm-browser-starterpack) where these examples are live.
