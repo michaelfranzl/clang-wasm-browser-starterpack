@@ -3,7 +3,7 @@ include ../../flags.mk
 OBJFILES = main.o
 
 LDFLAGS += \
-	-L ../../wasi-sdk/build/install/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi \
+	-L $(WASI_SDK)/share/wasi-sysroot/lib/wasm32-wasi \
 	-lc \
 	--import-memory
 
