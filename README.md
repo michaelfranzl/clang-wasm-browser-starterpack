@@ -59,7 +59,7 @@ The examples start as simple as possible, and then add more and more complexity:
 
 ## Live examples
 
-A copy of this repository is hosted on my [GitHub Page](https://michaelfranzl.github.io/clang-wasm-browser-starterpack) where these exmples are live.
+A copy of this repository is hosted on my [GitHub Page](https://michaelfranzl.github.io/clang-wasm-browser-starterpack) where these examples are live.
 
 To run the examples locally, simply serve the example directory using a static file server, e.g. you
 could use the built-in web server of the Ruby or Python 3 runtime:
