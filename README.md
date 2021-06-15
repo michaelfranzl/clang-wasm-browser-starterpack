@@ -61,6 +61,10 @@ The examples start as simple as possible, and then add more and more complexity:
 
 * [Example 10: Adding two numbers](examples/10)
 
+### C++ with Standard Library
+
+* [Example 11: Print a vector element](examples/11)
+
 
 ## Live examples
 

@@ -5,6 +5,7 @@ examples:
 	$(MAKE) -C examples/03
 	$(MAKE) -C examples/04
 	$(MAKE) -C examples/10
+	$(MAKE) -C examples/11
 
 .PHONY: clean
 clean:
