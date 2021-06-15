@@ -48,7 +48,7 @@ The examples start as simple as possible, and then add more and more complexity:
 
 ### Plain C
 
-* [Example 1: Exports](examples/01) (compiles two C files into one WASM binary)
+* [Example 1: Exports](examples/01)
 * [Example 2: Default imports](examples/02)
 * [Example 3: Renamed imports](examples/03)
 
