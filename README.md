@@ -56,6 +56,10 @@ The examples start as simple as possible, and then add more and more complexity:
 
 * [Example 4: printf("Hello World!\n")](examples/04)
 
+###  String handling
+
+* [Example 5: Returning a string](examples/05)
+
 
 ### Plain C++
 
