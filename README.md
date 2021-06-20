@@ -108,6 +108,7 @@ git clone --recurse-submodules https://github.com/WebAssembly/wasi-sdk.git # abo
 cd wasi-sdk
 git checkout a927856376271224d30c5d7732c00a0b359eaa45 # use llvm 12.0.0 release
 make
+make install # installs to /opt/wasi-sdk by default
 cd ..
 
 # Build the examples
@@ -117,6 +118,14 @@ make
 # Serve the examples locally
 cd examples
 ruby -run -ehttpd . -p8000
+```
+
+If `wasi-sdk` is installed to a different directory than the default (`/opt/wasi-sdk`), you need to
+set the path to the installation directory as environment variable `WASI_SDK` and compile the
+examples like this:
+
+```sh
+WASI_SDK=/custom/path/to/wasi-sdk make
 ```
 
 ## Dependencies
