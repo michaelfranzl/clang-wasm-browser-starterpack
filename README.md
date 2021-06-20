@@ -60,6 +60,7 @@ The examples start as simple as possible, and then add more and more complexity:
 
 * [Example 5: Returning a string](examples/05)
 * [Example 6: Passing a string to a function](examples/06)
+* [Example 7: Calling int main(int argc, char* argv[])](examples/07)
 
 
 ### Plain C++
