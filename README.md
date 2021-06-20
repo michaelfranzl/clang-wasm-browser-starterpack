@@ -59,6 +59,7 @@ The examples start as simple as possible, and then add more and more complexity:
 ###  String handling
 
 * [Example 5: Returning a string](examples/05)
+* [Example 6: Passing a string to a function](examples/06)
 
 
 ### Plain C++
