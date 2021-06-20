@@ -1,13 +1,13 @@
 # clang-wasm-browser-starterpack
 
-Minimal working examples of C and C++ development targeting the web via WebAssembly.
+Minimal working examples of C and C++ software development targeting the web via WebAssembly.
 
 
 ## Background
 
 LLVM/Clang can directly emit WebAssembly since version 8. For simple scenarios, this allows a
-lean and direct development workflow targeting the web,
-omitting other SDKs like [emscripten](https://emscripten.org/).
+lean and direct software development workflow targeting the web,
+omitting more complete SDKs like [emscripten](https://emscripten.org/).
 
 The [wasi-sdk](https://github.com/WebAssembly/wasi-sdk) project is a cornerstone in this workflow.
 It contains no compiler or library code itself; it merely pulls in via git submodules the upstream
