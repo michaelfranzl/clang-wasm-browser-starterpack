@@ -74,6 +74,9 @@ The examples start as simple as possible, and then add more and more complexity:
 
 ## Live examples
 
+To ease the deployment worfklow of the examples, they currently require a browser supporting [import
+maps](https://caniuse.com/import-maps), e.g. based on Chromium 89 or newer.
+
 A copy of this repository is hosted on my [GitHub Page](https://michaelfranzl.github.io/clang-wasm-browser-starterpack) where these examples are live.
 
 To run the examples locally, simply serve the example directory using a static file server, e.g. you
