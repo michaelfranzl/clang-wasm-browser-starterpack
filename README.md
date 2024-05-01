@@ -109,7 +109,7 @@ cd wasi-sdk
 git checkout a927856376271224d30c5d7732c00a0b359eaa45 # use llvm 12.0.0 release
 git submodule update
 make
-make install # installs to /opt/wasi-sdk by default
+sudo mv build/install/opt/wasi-sdk /opt
 cd ..
 
 # Build the examples
