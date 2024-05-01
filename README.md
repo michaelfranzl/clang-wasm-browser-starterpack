@@ -119,8 +119,3 @@ examples like this:
 WASI_SDK=/path/to/wasi-sdk/build/install/opt/wasi-sdk/ make
 ```
 
-### Additional dependencies
-
-* `wasm-opt` (from [binaryen](https://github.com/WebAssembly/binaryen)) for WebAssembly code optimization.
-* `wasm-strip` (from [wabt](https://github.com/WebAssembly/wabt)) to minimize the size of the WebAssembly binary
-* `wasm2wabt` (from [wabt](https://github.com/WebAssembly/wabt)) to translate binary code to human-readable code.
