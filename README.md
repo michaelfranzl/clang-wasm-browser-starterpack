@@ -35,12 +35,52 @@ low-level mechanics of getting compiled C and C++ code to run in the browser, an
 possible workflow.
 
 
-## Examples
+## Building
+
+
+```sh
+# Clone this repository
+git clone https://github.com/michaelfranzl/clang-wasm-browser-starterpack.git
+cd lang-wasm-browser-starterpack
+
+# Build a specific commit of wasi-sdk
+git clone --recurse-submodules https://github.com/WebAssembly/wasi-sdk.git # about 1.5 GB
+cd wasi-sdk
+git checkout a927856376271224d30c5d7732c00a0b359eaa45 # commit "use llvm 12.0.0 release"
+git submodule update
+make
+sudo mv build/install/opt/wasi-sdk /opt
+cd ..
+
+# Build the examples
+make clean
+make
+
+# Serve the examples locally
+cd examples
+ruby -run -ehttpd . -p8000
+```
+
+**Note**: Building the examples depends on the tools of LLVM version 12,
+which was never shipped as part of a wasi-sdk release;
+for this reason, we need to use the specific wasi-sdk commit noted above.
+
+
+If you don't want to move `wasi-sdk` to `/opt`, then
+set the path to the installation directory as environment variable `WASI_SDK` and compile the
+examples like this:
+
+```sh
+WASI_SDK=/path/to/wasi-sdk/build/install/opt/wasi-sdk/ make
+```
+
+
+## The Examples
 
 The examples start as simple as possible, and then add more and more complexity:
 
-To run the examples locally, first build them (see section *Building* below),
-then simply serve the example directory using a static file server, e.g. you
+To run the examples locally,
+simply serve the example directory using a static file server, e.g. you
 could use the built-in web server of the Ruby or Python 3 runtime:
 
 ```sh
@@ -81,41 +121,3 @@ Then visit [http://localhost:8000](http://localhost:8000) and browse the example
 ### C++ with Standard Library
 
 * [Example 11: Print a vector element](examples/11)
-
-
-
-
-## Building
-
-
-```sh
-# Clone this repository
-git clone https://github.com/michaelfranzl/clang-wasm-browser-starterpack.git
-cd lang-wasm-browser-starterpack
-
-# Build a specific commit of wasi-sdk
-git clone --recurse-submodules https://github.com/WebAssembly/wasi-sdk.git # about 1.5 GB
-cd wasi-sdk
-git checkout a927856376271224d30c5d7732c00a0b359eaa45 # commit "use llvm 12.0.0 release"
-git submodule update
-make
-sudo mv build/install/opt/wasi-sdk /opt
-cd ..
-
-# Build the examples
-make clean
-make
-
-# Serve the examples locally
-cd examples
-ruby -run -ehttpd . -p8000
-```
-
-If you don't want to move `wasi-sdk` to `/opt`, then
-set the path to the installation directory as environment variable `WASI_SDK` and compile the
-examples like this:
-
-```sh
-WASI_SDK=/path/to/wasi-sdk/build/install/opt/wasi-sdk/ make
-```
-
