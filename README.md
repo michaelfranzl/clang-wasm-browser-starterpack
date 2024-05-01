@@ -107,6 +107,7 @@ cd lang-wasm-browser-starterpack
 git clone --recurse-submodules https://github.com/WebAssembly/wasi-sdk.git # about 1.5 GB
 cd wasi-sdk
 git checkout a927856376271224d30c5d7732c00a0b359eaa45 # use llvm 12.0.0 release
+git submodule update
 make
 make install # installs to /opt/wasi-sdk by default
 cd ..
