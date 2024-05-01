@@ -21,9 +21,6 @@ used syscalls has to be provided (in other words, *imported*) to the WebAssembly
 are targeting the web, the implementation is provided by the JavaScript library
 [@wasmer/wasi](https://github.com/wasmerio/wasmer-js/tree/master/packages/wasi) via the browser.
 
-After building `wasi-sdk`, the entire toolchain (version 12 of `clang`, `clang++`, `wasm-ld`,
-etc.) will be installed in the sub-directory `./wasi-sdk/build/install/opt/wasi-sdk`.
-
 The `wasi-sdk` project lacks examples that show how it can be used; the present project aims to fill
 that gap.
 
@@ -37,41 +34,12 @@ possible workflow.
 
 ## Building
 
+Download and extract or install [wasi-sdk Release 22](https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-22).
+
+Set the path to the extracted or installed wasi-sdk as `WASI_SDK` (default: `/opt/wasi-sdk`) and run make:
 
 ```sh
-# Clone this repository
-git clone https://github.com/michaelfranzl/clang-wasm-browser-starterpack.git
-cd lang-wasm-browser-starterpack
-
-# Build a specific commit of wasi-sdk
-git clone --recurse-submodules https://github.com/WebAssembly/wasi-sdk.git # about 1.5 GB
-cd wasi-sdk
-git checkout a927856376271224d30c5d7732c00a0b359eaa45 # commit "use llvm 12.0.0 release"
-git submodule update
-make
-sudo mv build/install/opt/wasi-sdk /opt
-cd ..
-
-# Build the examples
-make clean
-make
-
-# Serve the examples locally
-cd examples
-ruby -run -ehttpd . -p8000
-```
-
-**Note**: Building the examples depends on the tools of LLVM version 12,
-which was never shipped as part of a wasi-sdk release;
-for this reason, we need to use the specific wasi-sdk commit noted above.
-
-
-If you don't want to move `wasi-sdk` to `/opt`, then
-set the path to the installation directory as environment variable `WASI_SDK` and compile the
-examples like this:
-
-```sh
-WASI_SDK=/path/to/wasi-sdk/build/install/opt/wasi-sdk/ make
+WASI_SDK=/path/to/wasi-sdk make
 ```
 
 

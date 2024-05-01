@@ -4,7 +4,7 @@ OBJFILES = main.o
 
 LDFLAGS += \
 	-L $(WASI_SDK)/share/wasi-sysroot/lib/wasm32-wasi \
-	-L $(WASI_SDK)/lib/clang/12.0.0/lib/wasi \
+	-L $(WASI_SDK)/lib/clang/18/lib/wasi \
 	-lc \
 	-lc++ \
 	-lc++abi \

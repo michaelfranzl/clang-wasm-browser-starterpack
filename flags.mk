@@ -19,7 +19,7 @@ LDFLAGS_OPTIMIZATION = \
 	--lto-O3
 
 LDFLAGS= \
-  --no-entry \
-  --export-dynamic \
-	--unresolved-symbols=import-functions \
+	--no-entry \
+	--export-dynamic \
+	--import-undefined \
 	$(LDFLAGS_OPTIMIZATION)
