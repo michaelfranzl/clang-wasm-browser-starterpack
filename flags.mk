@@ -1,4 +1,4 @@
-WASI_SDK=/opt/wasi-sdk
+WASI_SDK?=/opt/wasi-sdk
 
 CC=$(WASI_SDK)/bin/clang
 CXX=$(WASI_SDK)/bin/clang++
