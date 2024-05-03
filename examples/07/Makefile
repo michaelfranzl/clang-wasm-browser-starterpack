@@ -1,4 +1,4 @@
-include ../../flags.mk
+include ../flags.mk
 
 OBJFILES = main.o
 
@@ -9,4 +9,4 @@ LDFLAGS += \
 	-export free \
 	--import-memory
 
-include ../../rules.mk
+include ../rules.mk

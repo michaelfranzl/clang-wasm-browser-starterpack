@@ -1,4 +1,4 @@
-include ../../flags.mk
+include ../flags.mk
 
 OBJFILES = main.o
 
@@ -12,4 +12,4 @@ LDFLAGS += \
 	-lclang_rt.builtins-wasm32 \
 	--import-memory
 
-include ../../rules.mk
+include ../rules.mk

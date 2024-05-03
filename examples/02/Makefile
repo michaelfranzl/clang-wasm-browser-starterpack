@@ -1,5 +1,5 @@
-include ../../flags.mk
+include ../flags.mk
 
 OBJFILES = main.o
 
-include ../../rules.mk
+include ../rules.mk

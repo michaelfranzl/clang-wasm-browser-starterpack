@@ -36,9 +36,10 @@ possible workflow.
 
 Download and extract or install [wasi-sdk Release 22](https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-22).
 
-Set the path to the extracted or installed wasi-sdk as `WASI_SDK` (default: `/opt/wasi-sdk`) and run make:
+Set the path to the extracted or installed wasi-sdk as `WASI_SDK` (default: `/opt/wasi-sdk`) and run `make` in the `examples` subdirectory:
 
 ```sh
+cd examples
 WASI_SDK=/path/to/wasi-sdk make
 ```
 

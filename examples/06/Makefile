@@ -1,4 +1,4 @@
-include ../../flags.mk
+include ../flags.mk
 
 OBJFILES = main.o
 
@@ -8,4 +8,4 @@ LDFLAGS += \
 	-export malloc \
 	--import-memory
 
-include ../../rules.mk
+include ../rules.mk
