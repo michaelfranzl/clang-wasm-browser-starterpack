@@ -3,7 +3,7 @@ include ../../flags.mk
 OBJFILES = main.o
 
 LDFLAGS += \
-	-L $(WASI_SDK)/share/wasi-sysroot/lib/wasm32-wasi \
+	-L${WASI_LIBC_LIB} \
 	-lc \
 	-export malloc \
 	-export free \

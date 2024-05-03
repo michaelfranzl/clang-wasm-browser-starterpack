@@ -3,8 +3,9 @@ include ../../flags.mk
 OBJFILES = main.o
 
 LDFLAGS += \
-	-L $(WASI_SDK)/share/wasi-sysroot/lib/wasm32-wasi \
-	-L $(WASI_SDK)/lib/clang/18/lib/wasi \
+	-L${WASI_LIBC_LIB} \
+	-L${WASM_LIBCXX_LIB} \
+	-L${WASM_COMPILER_RT_LIB} \
 	-lc \
 	-lc++ \
 	-lc++abi \
