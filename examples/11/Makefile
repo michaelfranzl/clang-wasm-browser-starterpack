@@ -13,3 +13,7 @@ LDFLAGS += \
 	--import-memory
 
 include ../rules.mk
+
+install:
+	mkdir -p ${PREFIX}/11
+	cp index.html index.js main.wasm README.md ${PREFIX}/11

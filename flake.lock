@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1715447595,
+        "narHash": "sha256-VsVAUQOj/cS1LCOmMjAGeRksXIAdPnFIjCQ0XLkCsT0=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "062ca2a9370a27a35c524dc82d540e6e9824b652",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1714253743,
+        "narHash": "sha256-mdTQw2XlariysyScCv2tTE45QSU9v/ezLcHJ22f0Nxc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "58a1abdbae3217ca6b702f03d3b35125d88a2994",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "wasm-sdk": "wasm-sdk"
+      }
+    },
+    "wasm-sdk": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1715503663,
+        "narHash": "sha256-NNntXY3pmcbmXQVfCHDjPQfwGDA/oqD2L9Fxv7BqL6c=",
+        "owner": "michaelfranzl",
+        "repo": "wasm-sdk",
+        "rev": "d3d714feb6d2b3a84951401f814bf3704902ae37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "michaelfranzl",
+        "ref": "v2.0.0",
+        "repo": "wasm-sdk",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

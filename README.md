@@ -2,7 +2,6 @@
 
 Minimal working examples of C and C++ software development targeting the web via WebAssembly.
 
-
 ## Background
 
 Clang can directly emit WebAssembly since version 8. For simple scenarios, this allows a
@@ -32,7 +31,18 @@ low-level mechanics of getting compiled C and C++ code to run in the browser, an
 possible workflow.
 
 
-## Building
+## Running
+
+### Using Nix
+
+```sh
+nix run
+# Wait for it:
+# Serving HTTP on 127.0.0.1 port 8000 (http://127.0.0.1:8000/) ...
+```
+
+
+### Manual
 
 Download and extract or install [wasi-sdk Release 22](https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-22).
 
@@ -40,7 +50,15 @@ Set the path to the extracted or installed wasi-sdk as `WASI_SDK` (default: `/op
 
 ```sh
 cd examples
+
 WASI_SDK=/path/to/wasi-sdk make
+
+# Start a generic web server:
+python3 -m http.server 8000 --bind 127.0.0.1
+
+
+# In a different terminal:
+open http://localhost:8000/
 ```
 
 
@@ -48,23 +66,6 @@ WASI_SDK=/path/to/wasi-sdk make
 
 The examples start as simple as possible, and then add more and more complexity:
 
-To run the examples locally,
-simply serve the example directory using a static file server, e.g. you
-could use the built-in web server of the Ruby or Python 3 runtime:
-
-```sh
-cd examples
-ruby -run -ehttpd . -p8000
-```
-
-Or
-
-```sh
-cd examples
-python3 -m http.server 8000
-```
-
-Then visit [http://localhost:8000](http://localhost:8000) and browse the examples.
 
 ### Plain C
 
