@@ -1,14 +1,14 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    wasm-sdk.url = "github:michaelfranzl/wasm-sdk?ref=v2.0.0";
+    wasi-sdk.url = "github:michaelfranzl/wasi-sdk-nixos?ref=v3.0.0";
   };
 
   outputs =
     {
       self,
       nixpkgs,
-      wasm-sdk,
+      wasi-sdk,
     }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
@@ -17,7 +17,7 @@
 
       packages.x86_64-linux.default = import ./default.nix {
         inherit pkgs;
-        wasm-sdk = wasm-sdk.packages.x86_64-linux.default;
+        wasi-sdk = wasi-sdk.packages.x86_64-linux.default;
       };
 
       apps.x86_64-linux.default =

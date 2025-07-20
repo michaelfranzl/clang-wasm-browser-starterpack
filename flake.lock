@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1715447595,
-        "narHash": "sha256-VsVAUQOj/cS1LCOmMjAGeRksXIAdPnFIjCQ0XLkCsT0=",
+        "lastModified": 1752687322,
+        "narHash": "sha256-RKwfXA4OZROjBTQAl9WOZQFm7L8Bo93FQwSJpAiSRvo=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "062ca2a9370a27a35c524dc82d540e6e9824b652",
+        "rev": "6e987485eb2c77e5dcc5af4e3c70843711ef9251",
         "type": "github"
       },
       "original": {
@@ -35,25 +35,25 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "wasm-sdk": "wasm-sdk"
+        "wasi-sdk": "wasi-sdk"
       }
     },
-    "wasm-sdk": {
+    "wasi-sdk": {
       "inputs": {
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1715503663,
-        "narHash": "sha256-NNntXY3pmcbmXQVfCHDjPQfwGDA/oqD2L9Fxv7BqL6c=",
+        "lastModified": 1752945943,
+        "narHash": "sha256-M9vMcBeDwTjG43KXjJdneKtEyoqhDpvOt1fAynJGIng=",
         "owner": "michaelfranzl",
-        "repo": "wasm-sdk",
-        "rev": "d3d714feb6d2b3a84951401f814bf3704902ae37",
+        "repo": "wasi-sdk-nixos",
+        "rev": "13ca9e63019c12e6e03254a19aac0fa5d3a0a34b",
         "type": "github"
       },
       "original": {
         "owner": "michaelfranzl",
-        "ref": "v2.0.0",
-        "repo": "wasm-sdk",
+        "ref": "v3.0.0",
+        "repo": "wasi-sdk-nixos",
         "type": "github"
       }
     }

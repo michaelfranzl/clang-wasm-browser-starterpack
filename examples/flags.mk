@@ -12,7 +12,7 @@ WASI_LIBC_LIB ?= ${WASM_LLVM}/share/wasi-sysroot/lib/wasm32-wasi
 WASM_LIBCXX_LIB ?= ${WASM_LLVM}/share/wasi-sysroot/lib
 WASM_LIBCXX_INC ?= ${WASM_LLVM}/share/wasi-sysroot/include
 
-WASM_COMPILER_RT_LIB ?= ${WASM_LLVM}/lib/clang/18/lib/wasi
+# WASM_COMPILER_RT_LIB ?= ${WASM_LLVM}/lib/clang/17/lib/wasi
 
 CFLAGS_OPTIMIZATION = \
 	-O3 \
