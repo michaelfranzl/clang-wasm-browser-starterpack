@@ -41,6 +41,8 @@ nix run
 # Serving HTTP on 127.0.0.1 port 8000 (http://127.0.0.1:8000/) ...
 ```
 
+Then open in your browser: http://127.0.0.1:8000 and click on one of the example directories.
+
 
 ### Manual
 
@@ -55,11 +57,9 @@ WASI_SDK=/path/to/wasi-sdk make
 
 # Start a generic web server:
 python3 -m http.server 8000 --bind 127.0.0.1
-
-
-# In a different terminal:
-open http://localhost:8000/
 ```
+
+Then open in your browser: http://127.0.0.1:8000 and click on one of the example directories.
 
 
 ## The Examples
