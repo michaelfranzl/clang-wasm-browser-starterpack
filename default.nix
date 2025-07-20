@@ -2,7 +2,7 @@
 with pkgs;
 stdenv.mkDerivation {
   name = "clang-wasm-browser-starterpack";
-  version = "1.0.0";
+  version = "1.0.1";
 
   src = ./examples;
 
