@@ -2,6 +2,11 @@
 
 Minimal working examples of C and C++ software development targeting the web via WebAssembly.
 
+## Maintenance
+
+This project is exclusively maintained at https://code.michael.franzl.name/michael/clang-wasm-browser-starterpack
+
+
 ## Background
 
 Clang can directly emit WebAssembly since version 8. For simple scenarios, this allows a
